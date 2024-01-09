@@ -7,7 +7,7 @@ def roman_to_int(roman_string):
 
     result = 0
     for i in range(len(roman_string)):
-        cur_symbol = roman_dict[roman_string[i]]
+        cur_symbol = r_dict[roman_string[i]]
         if i == len(roman_string) - 1:
             result += cur_symbol
         elif cur_symbol >= r_dict[roman_string[i + 1]]:
