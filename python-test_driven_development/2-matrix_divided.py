@@ -19,7 +19,7 @@ def matrix_divided(matrix, div):
             not all(isinstance(row, list) for row in matrix)):
         raise TypeError(matrix_error)
     elif not all(isinstance(i, (int, float))
-                    for row in matrix for i in row):
+            for row in matrix for i in row):
         raise TypeError(matrix_error)
 
     rows = len(matrix)
