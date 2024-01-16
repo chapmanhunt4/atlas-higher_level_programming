@@ -1,0 +1,27 @@
+import doctest
+doctest.filetest("4-print_square.txt")
+
+	import function from module:
+		>>> print_square = __import__("4-print_square").print_square
+
+	passing proper input:
+		>>> print_square(4)
+		####
+		####
+		####
+		####
+
+	passing non-integer:
+		>>> print_square("square")
+		Traceback (most recent call last):
+		TypeError: size must be an integer
+
+	passing negative value:
+		>>> print_square(-4)
+		Traceback (most recent call last):
+		ValueError: size must be >= 0
+
+	passing no argument:
+		>>> print_square()
+		Traceback (most recent call last):
+		TypeError: print_square() missing 1 required positional argument 'size'
