@@ -1,0 +1,8 @@
+import doctest
+doctest.testfile("2-matrix_divided.txt")
+
+	import function from module:
+		>>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+	passing proper input:
+		>>> matrix_divided([[2, 4, 6], [8, 10, 12]], 2)
