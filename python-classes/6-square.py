@@ -75,10 +75,14 @@ class Square:
         """
         Prints the area and position.
         """
-        if self.size == 0:
+        if self.size < 1:
             print("")
         else:
             for i in range(self.position[1]):
-                print(" " * self.position[0], end="")
-            for i in range(self.size):
-                print(" " * self.position[0] + "#" * self.size)
+                print("")
+            for j in range(self.size):
+                for x in range (self.position[0]):
+                    print(" ", end="")
+                for y in range(self.size):
+                    print("#", end="")
+                print("")
