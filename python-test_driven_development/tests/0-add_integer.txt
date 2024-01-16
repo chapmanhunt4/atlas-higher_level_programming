@@ -6,4 +6,3 @@ doctest.testfile("0-add_integer.txt")
 
 	passing proper input:
 		>>> add_integer(2, 2)
-		4
