@@ -4,3 +4,6 @@ doctest.testfile("0-add_integer.txt")
 	import function from module:
 		>>> add_integer = __import__("0-add_integer").add_integer
 
+	passing proper input:
+		>>> add_integer(2, 2)
+
