@@ -14,9 +14,10 @@ def matrix_divided(matrix, div):
         div: the divisor to divide each element by.
     """
 
+    size_error = "matrix must be a matrix (list of lists) of integers/floats"
     for row in matrix:
         if not isinstance(matrix, list) or not isinstance(row, list):
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            raise TypeError(size_error)
     rows = len(matrix)
     cols = len(matrix[0])
     for row in matrix:
