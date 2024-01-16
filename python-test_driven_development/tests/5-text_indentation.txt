@@ -1,0 +1,25 @@
+import doctest
+doctest.filetest("5-text_indentation.txt")
+
+	import function from module:
+		>>> text_indentation = __import__("5-text_indentation").text_indentation
+
+	passing proper input:
+		>>> text_indentation("This string breaks at: and at? and also at. then it finishes
+		This string breaks at:
+		<BLANKLINE>
+		and at?
+		<BLANKLINE>
+		and also at.
+		<BLANKLINE>
+		then it finishes
+
+	passing non-string:
+		>>> text_indentation(4)
+		Traceback (most recent call last):
+		TypeError: text must be a string
+
+	passing a blank string:
+		>>> text_indentation("")
+		Traceback (most recent call last):
+		TypeError: text_indentation() missing 1 required positional argument: "text"
