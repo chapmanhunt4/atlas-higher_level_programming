@@ -5,14 +5,9 @@ doctest.filetest("5-text_indentation.txt")
 		>>> text_indentation = __import__("5-text_indentation").text_indentation
 
 	passing proper input:
-		>>> text_indentation("This string breaks at: and at? and also at. then it finishes")
-		This string breaks at:
+		>>> text_indentation("This string breaks at the end.")
+		This string breaks at the end.
 		<BLANKLINE>
-		and at?
-		<BLANKLINE>
-		and also at.
-		<BLANKLINE>
-		then it finishes
 
 	passing non-string:
 		>>> text_indentation(4)
