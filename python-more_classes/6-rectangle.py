@@ -5,9 +5,11 @@ A module defining the rectangle class.
 
 
 class Rectangle:
-    number_of_instances = 0
     """
-    Defining of the square class.
+    Defining of the rectangle class.
+
+    Attributes:
+        number_of_instances: the number of Rectangle instances.
     """
     def __init__(self, width=0, height=0):
         """
