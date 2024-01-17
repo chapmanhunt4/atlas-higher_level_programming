@@ -11,6 +11,7 @@ class Rectangle:
     Attributes:
         number_of_instances: the number of Rectangle instances.
     """
+    number_of_instances = 0
     def __init__(self, width=0, height=0):
         """
         The constructor for the Rectangle class.
