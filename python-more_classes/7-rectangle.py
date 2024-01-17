@@ -63,10 +63,12 @@ class Rectangle:
             return 2 * (self.__width + self.__height)
 
     def __str__(self):
+        rect_str = ""
         if self.__width == 0 or self.__height == 0:
             return ("")
         else:
-            return "\n".join("".join([Rectangle.print_symbol]*self.width) for i in range(self.height))
+            return "\n".join(str(self.print_symbol) * self.__width for i in range(self.__height))
+        
 
     def __repr__(self):
         return ("Rectangle({}, {})".format(self.__width, self.__height))
