@@ -1,4 +1,4 @@
-#!/isr/bin/python3
+#!/usr/bin/python3
 
 """
 A module with the lookup method, that returns a list of all
